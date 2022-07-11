@@ -50,5 +50,6 @@
     <td align="center"><a href="https://github.com/jinwapp"><img src="https://avatars.githubusercontent.com/u/104186487?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jinwapp</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/munsik419"><img src="https://avatars.githubusercontent.com/u/104332972?v=4?s=100" width="100px;" alt=""/><br /><sub><b>munsik419</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/tkdtn1427"><img src="https://avatars.githubusercontent.com/u/81614803?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tkdtn1427</b></sub></a><br /></td>
+       <td align="center"><a href="https://github.com/devEdok13"><img src="https://avatars.githubusercontent.com/u/104124893?v=4?s=100" width="100px;" alt=""/><br /><sub><b>devEdok13</b></sub></a><br /></td>
 </tr>
 </table>
