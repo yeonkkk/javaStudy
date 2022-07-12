@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+        //입력 첫째줄 A 둘째줄 B
+        // 각각의 자리가 10진수, 1000자리를 넘지 않는다.
+        // 첫째줄에 A+B, 둘째 줄에 A-B, 셋째 줄게 A*B 를 출력한다.
         int A = input.nextInt();
         int B = input.nextInt();
         System.out.println(A+B);
