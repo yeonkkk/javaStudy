@@ -17,13 +17,25 @@ public class BOJ_17362 {
 
 		// Calculation
 		switch (input) {
+			case 0:   //  input이 8일때
+				result = 2;
+				break;
+			case 7:
+				result = 3;
+				break;
+			case 6:
+				result = 4;
+				break;
+			default:
+				result = input;
+				break;
 // before-refact
 /*
 			case 1:
 				result = 1;
 				break;
 			case 2:
-			case 8:
+			case 0: //  8일때는 나머지가 0
 				result = 2;
 				break;
 			case 3:
@@ -38,18 +50,6 @@ public class BOJ_17362 {
 				result = 5;
 				break;
  */
-			case 0:   //  8일때
-				result = 2;
-				break;
-			case 7:
-				result = 3;
-				break;
-			case 6:
-				result = 4;
-				break;
-			default:
-				result = input;
-				break;
 		}
 
 		// Out-put

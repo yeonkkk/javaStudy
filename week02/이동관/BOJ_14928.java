@@ -1,9 +1,32 @@
 import java.io.*;
-import java.math.BigInteger;
-import java.util.StringTokenizer;
 
 public class BOJ_14928 {
 	public static void main(String[] args) throws IOException {
+		// I/O set-up
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		// Input
+		String input = br.readLine();
+		br.close();
+
+		// var-init
+		int mod = 20000303;
+		int result = 0;
+
+		// Calculation
+		for (int i = 0; i < input.length(); i++) {
+			result *= 10;
+			result += Character.getNumericValue(input.charAt(i));
+			result %= mod;
+		}
+
+		// Out-put
+		bw.write(String.valueOf(result));
+		bw.flush();
+
+// Wrong-Code : Time-out
+/*
 		// I/O set-up
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -22,5 +45,6 @@ public class BOJ_14928 {
 		// Out-put
 		bw.write(String.valueOf(result));
 		bw.flush();
+*/
 	}
 }
