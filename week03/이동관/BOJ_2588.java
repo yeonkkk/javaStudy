@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.StringTokenizer;
 
 public class BOJ_2588 {
   public static void main(String[] args) throws IOException {
@@ -9,9 +8,24 @@ public class BOJ_2588 {
     BufferedWriter bw =
         new BufferedWriter(new OutputStreamWriter(System.out));
 
-    // strToken Set-up
-    StringTokenizer st = new StringTokenizer(br.readLine());
+    // var-init
+    int num1 = Integer.parseInt(br.readLine());
+    int num2 = Integer.parseInt(br.readLine());
 
+    // Calculate
+    int num3 = num1 * (num2 % 10);
+    int num4 = num1 * ((num2 % 100) / 10);
+    int num5 = num1 * (num2 / 100);
+    int num6 = num1 * num2;
 
+    // Out-put
+    bw.write(String.valueOf(num3));
+    bw.newLine();
+    bw.write(String.valueOf(num4));
+    bw.newLine();
+    bw.write(String.valueOf(num5));
+    bw.newLine();
+    bw.write(String.valueOf(num6));
+    bw.newLine();
   }
 }
