@@ -9,9 +9,21 @@ public class BOJ_2753 {
     BufferedWriter bw =
         new BufferedWriter(new OutputStreamWriter(System.out));
 
-    // strToken Set-up
-    StringTokenizer st = new StringTokenizer(br.readLine());
+    // var-init
+    int num1 = Integer.parseInt(br.readLine());
+    String result = "";
 
-
+    // Calculate
+    if (num1 % 400 == 0) {
+      result = "1";
+    } else if (num1 % 4 == 0 && num1 % 100 != 0) {
+      result = "1";
+    } else {
+      result = "0";
+    }
+    // Out-put
+    bw.write(result);
+    bw.close();
+    br.close();
   }
 }
