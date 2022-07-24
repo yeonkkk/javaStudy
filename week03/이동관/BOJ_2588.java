@@ -27,5 +27,7 @@ public class BOJ_2588 {
     bw.newLine();
     bw.write(String.valueOf(num6));
     bw.newLine();
+    bw.close();
+    br.close();
   }
 }
