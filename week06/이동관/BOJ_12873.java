@@ -13,6 +13,7 @@ public class BOJ_12873 {
   // var-init
     int N = Integer.parseInt(br.readLine());
     int round = 1;
+    int dest = 1;
     int count = 0;
 
     Queue<Integer> que = new LinkedList<>();
@@ -23,11 +24,16 @@ public class BOJ_12873 {
   // Calculate
     while (que.size() != 1) {
       count++;
-      if (count != Math.pow(round, 3)) {
+      if (count != dest) {
         que.add(que.poll());
       } else {
         que.poll();
         round++;
+        //  반복 구간을 줄이기 위해 round^3을 que.size()로 나눠줌
+        dest = (int) (Math.pow(round, 3) % que.size());
+        //  edge-case
+          //  round^3 % que.size() == 0 이면 무한반복
+        if (dest == 0) dest = que.size();
         count = 0;
       }
     }
