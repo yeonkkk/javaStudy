@@ -1,7 +1,7 @@
 import java.io.*;
 import java.math.BigInteger;
 
-public class BOJ_1212 {
+public class BOJ_2935 {
   public static void main(String[] args) throws IOException {
   // I/O Set-up
     BufferedReader br =
@@ -10,10 +10,21 @@ public class BOJ_1212 {
         new BufferedWriter(new OutputStreamWriter(System.out));
 
   // Var-init
-    BigInteger radix8 = new BigInteger(br.readLine(),8);
+    BigInteger A = new BigInteger(br.readLine());
+    String oper = br.readLine();
+    BigInteger B = new BigInteger(br.readLine());
+
+  // Calculate
+    switch (oper){
+      case "+":
+        bw.write(String.valueOf(A.add(B)));
+        break;
+      case "*":
+        bw.write(String.valueOf(A.multiply(B)));
+        break;
+    }
 
   // Out-put
-    bw.write(radix8.toString(2));
     bw.close();
     br.close();
   }
