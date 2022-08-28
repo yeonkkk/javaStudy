@@ -1,4 +1,4 @@
-package week1;
+package 이상수;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
