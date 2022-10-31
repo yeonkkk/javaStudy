@@ -1,4 +1,14 @@
-|WEEK|DATE|CONTENT| PRESENTER |
+# 🌱 자바 스터디 1기
+
+* 기간: 2022.07.05 ~ 2022.08.23  
+   
+* 시간: 화요일 21:00 ~ 22:00 (주 1회, 1시간)  
+* 자료: [초심자를 위한 70제](https://www.acmicpc.net/workbook/view/9873)
+
+<br><br>
+
+
+|WEEK|DATE|CONTENTS| PRESENTER |
 |:--:|:--:|:--:|:--:|
 |1 |2022년 7월 5일	|스터디 OT		         |
 |1	|2022년 7월 12일	|엄청난 부자2        |	김성연	|
