@@ -1,14 +1,21 @@
 # 🌱 자바 스터디
 > 백준 기초 70 문제를 통해 자바를 공부해나가는 스터디🔥
 
+* 시간: 화요일 21:00 ~ 22:00 (주 1회, 1시간)  
 
 * 기간
  
    * [1기: 2022.07.05 ~ 2022.08.23 (종료)](https://github.com/yeonkkk/javaStudy/blob/main/1st-study/README.md)
-   * 2기: 2022.11.01 ~ 
+   * 2기: 2022.11.01 ~ 2022.11.08 (종료)
+   * 3기: 2022.11.15 ~ 
    
-* 시간: 화요일 21:00 ~ 22:00 (주 1회, 1시간)  
-* 자료: [초심자를 위한 70제](https://www.acmicpc.net/workbook/view/9873)
+* 자료
+ 
+   * 1기 & 2기: [백준 초심자를 위한 70제 문제집](https://www.acmicpc.net/workbook/view/9873)
+   * 3기: [백준 코테 기본 스터디 문제집](https://www.acmicpc.net/workbook/view/13057)
+
+<br>
+<br>
 
 * 진행 방식:  
 
@@ -47,3 +54,10 @@
        <td align="center"><a href="https://github.com/devEdok13"><img src="https://avatars.githubusercontent.com/u/104124893?v=4?s=100" width="100px;" alt=""/><br /><sub><b>devEdok13</b></sub></a><br /></td>
 </tr>
 </table>
+
+<br>
+<br>
+
+
+* 1기(8명): 김성연, 이동관, 이상수, 진종국, 조진우, 최대한, 김주현, 김문식
+* 2기 & 3기(6명): 김성연, 이동관, 이상수, 진종국, 조진우, 최대한
