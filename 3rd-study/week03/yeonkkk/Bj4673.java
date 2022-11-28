@@ -4,11 +4,12 @@
 
 public class Bj4673 {
     private final static int LIMIT = 10000;
-    public static boolean[] check = new boolean[LIMIT + 1];
 
     public static void main(String[] args) {
+        boolean[] check = new boolean[LIMIT + 1];
+
         for (int i = 1; i < LIMIT; i++) {
-            d(i);
+            d(check, i);
         }
 
         for (int i = 1; i <= LIMIT; i++) {
@@ -18,7 +19,7 @@ public class Bj4673 {
         }
     }
 
-    public static void d(int n) {
+    public static void d(boolean[] check, int n) {
         int result = n;
 
         while (n != 0) {
