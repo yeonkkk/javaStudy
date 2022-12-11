@@ -6,7 +6,7 @@
 * 기간
  
    * [1기: 2022.07.05 ~ 2022.08.23 (종료)](https://github.com/yeonkkk/javaStudy/blob/main/1st-study/README.md)
-   * 2기: 2022.11.01 ~ 2022.11.08 (종료)
+   * [2기: 2022.11.01 ~ 2022.11.08 (종료)](https://github.com/yeonkkk/javaStudy/tree/main/2nd-study)
    * 3기: 2022.11.15 ~ 
    
 * 자료
