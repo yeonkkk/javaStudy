@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  * BOJ 1260. DFS와 BFS
- * nullPointException 발생
+ * nullPointException 발생 -> 시작 노드가 map에 없을 수 있다. 그래서 처음에 모든 노드를 map에 추가하면 된다!
  */
 public class Boj1260 {
     public static void main(String[] args) throws IOException {
@@ -15,16 +15,19 @@ public class Boj1260 {
         int m = Integer.parseInt(st.nextToken());
         int v = Integer.parseInt(st.nextToken());
 
-        Map<Integer, List<Integer>> graph = makeGraph(m, br);
+        Map<Integer, List<Integer>> graph = new HashMap<>();
+
+        for (int i = 1; i <= n; i++) {
+            graph.put(i, new ArrayList<>());
+        }
+        makeGraph(m, br, graph);
 
         dfs(graph, v, n);
         System.out.println();
         bfs(graph, v, n);
     }
 
-    public static Map<Integer, List<Integer>> makeGraph(int m, BufferedReader br) throws IOException {
-        Map<Integer, List<Integer>> graph = new HashMap<>();
-
+    public static void makeGraph(int m, BufferedReader br, Map<Integer, List<Integer>> graph) throws IOException {
         for (int i = 0; i < m; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             int node1 = Integer.parseInt(st.nextToken());
@@ -33,16 +36,11 @@ public class Boj1260 {
             builder(node1, node2, graph);
             builder(node2, node1, graph);
         }
-        return graph;
     }
 
     public static void builder(int node1, int node2, Map<Integer, List<Integer>> graph) {
-        if (!graph.containsKey(node1)) {
-            graph.put(node1, new ArrayList<>());
-        }
         List<Integer> value = graph.get(node1);
         value.add(node2);
-
         graph.put(node1, value);
     }
 
